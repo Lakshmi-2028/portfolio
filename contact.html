@@ -1,0 +1,76 @@
+<!-- <section id="contact" class="contact-section">
+    <link rel="stylesheet" href="styles.css">
+    <img src = "contact.png" alt="image" class="contact-image">
+    <h2>Contact Me</h2>
+    <p>If you have any questions, please feel free to drop me a line. I'll get back to you as soon as I can. That's a promise!</p>
+    <div class="contact-info">
+        <p><strong>Email:</strong> <a href="mailto:lakshu202003@gmail.com">lakshu202003@gmail.com</a></p>
+        <p><strong>Phone:</strong> 9942733400</p>
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/lakshmi-shri-0397bb243" target="_blank">lakshmi-shri</a></p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/Lakshmi-2028" target="_blank">Lakshmi-2028</a></p>
+    </div>
+    <form class="contact-form" action="submit_form.php" method="POST">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        
+        <button type="submit" class="submit-button">Send Message</button>
+    </form>
+</section> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section id="contact" class="contact-section">
+        <img src="contact.png" alt="image" class="contact-image">
+        <h2>Contact Me</h2>
+        <p>If you have any questions, please feel free to drop me a line. I'll get back to you as soon as I can. That's a promise!</p>
+        <div class="contact-info">
+            <p><strong>Email:</strong> <a href="mailto:lakshu202003@gmail.com">lakshu202003@gmail.com</a></p>
+            <p><strong>Phone:</strong> 9942733400</p>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/lakshmi-shri-0397bb243" target="_blank">lakshmi-shri</a></p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/Lakshmi-2028" target="_blank">Lakshmi-2028</a></p>
+        </div>
+        <form class="contact-form" id="contact-form" onsubmit="return handleSubmit(event)">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            
+            <button type="submit" class="submit-button">Send Message</button>
+        </form>
+    </section>
+
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault(); // Prevent the form from submitting normally
+            
+            // Collect form data
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            
+            // Display the alert message
+            alert(`Thank you, ${name}! Your message has been sent.\n\nEmail: ${email}\nMessage: ${message}`);
+            
+            // Optionally, reset the form
+            document.getElementById('contact-form').reset();
+        }
+    </script>
+</body>
+</html>

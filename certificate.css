@@ -1,0 +1,66 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+}
+
+header {
+    background: #d60270; /* Pink color from the bisexual pride flag */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+main {
+    padding: 20px;
+    width: 80%;
+    margin: 20px auto;
+    transition: all 0.3s ease-in-out;
+}
+
+.certificates {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 50px;
+    padding: 40px;
+}
+
+.certificate {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.certificate:hover {
+    transform: translateY(-10px);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.certificate-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    transition: opacity 0.3s ease;
+}
+
+.certificate-image:hover {
+    opacity: 0.9;
+}
+
+@media (max-width: 600px) {
+    main {
+        width: 95%;
+    }
+
+    .certificates {
+        grid-template-columns: 1fr;
+    }
+}
+

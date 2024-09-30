@@ -1,0 +1,142 @@
+
+/* General Settings */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Main Section */
+main {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Project Section */
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.project {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project:nth-child(even) {
+    flex-direction: row-reverse; /* Alternates the layout for every even project */
+}
+
+.project img.project-image {
+    max-width: 40%;
+    border-radius: 10px;
+    margin-bottom: 0;
+}
+
+.project-content {
+    flex-basis: 55%;
+}
+
+.project h2 {
+    margin-top: 0;
+    color: #444;
+    font-size: 20px;
+}
+
+/* Links Styling */
+.github-link {
+    display: inline-block;
+    margin: 10px 0;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+    background-color: #0073e6;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.github-link:hover {
+    background-color: #005bb5;
+}
+
+.implementation {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.implementation h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+/* Hover Effects */
+.project:hover {
+    transform: translateY(-10px);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .project {
+        flex-direction: column;
+    }
+
+    .project:nth-child(even) {
+        flex-direction: column;
+    }
+
+    .project img.project-image {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+

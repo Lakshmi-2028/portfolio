@@ -1,0 +1,110 @@
+/* Existing styles... */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #ebc3c3;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: rgb(240, 234, 234);
+    padding: 20px 0;
+    text-align: center;
+}
+
+.main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.profile-photo {
+    max-width: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.details {
+    margin-top: 20px;
+}
+@media (max-width: 600px) {
+    .intro {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-photo {
+        margin-bottom: 20px;
+    }
+} */
+/* .skills-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.skill {
+    background: #007bff;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.skill:hover {
+    transform: scale(1.1);
+}
+
+.timeline {
+    margin-top: 40px;
+}
+
+.timeline-items {
+    list-style-type: none;
+    position: relative;
+    padding: 0;
+}
+
+.timeline-item {
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-left: 3px solid #007bff;
+    margin: 10px 0;
+    position: relative;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -9px;
+    top: 10px;
+    background-color: white;
+    border: 3px solid #007bff;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+}
+
+/* Footer fixed to bottom removed for better continuous flow */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+
+
